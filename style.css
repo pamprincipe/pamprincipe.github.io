@@ -1,0 +1,194 @@
+body {
+    font-family: "Inter", serif !important;
+}
+
+.nav-link {
+    color: black !important;
+    font-weight: 500;
+    font-size: 20px !important;
+}
+
+a.nav-link:hover {
+    text-decoration: none;
+    color: #9805B2 !important;
+}
+
+.navbar-top {
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+}
+
+.navbar .navbar-brand, .offcanvas-title {
+    color: #9805B2;
+    font-weight: 600;
+}
+
+.navbar .navbar-brand {
+    font-size: 22px;
+}
+
+.hero-section {
+    background-color: aliceblue;
+}
+
+.hero-section p {
+    font-size: 30px;
+}
+
+.hero-left .name {
+    color: #9805B2;
+    font-size: 80px;
+}
+
+.hero-left span {
+    font-weight: 600;
+}
+
+.btn.cv-btn {
+    font-size: 1.30em;
+    font-weight: 500;
+    color: #9805B2;
+    width: 30%;
+}
+
+.btn.cv-btn:hover {
+    color: aliceblue;
+    border-color: #9805B2;
+    background-color: #9805B2;
+}
+
+.btn.cv-btn:active {
+    color: #9805B2 !important;
+    border-color: #9805B2;
+}
+
+.hero-section .hero-right img {
+    width: 750px;
+}
+
+.about-section, .projects-section, .contact-section {
+    /* padding-top: 5rem; */
+    /* @media (mmin-width: 1200px) {
+        padding: 5rem 10rem;
+    }
+
+    @media (max-width: 1199.98px) {
+        padding: 5rem 3.125rem;
+    } */
+
+    padding: 2rem 1rem;
+    /* Add vertical padding */
+    margin: 1rem 0;
+    /* Add margin to prevent overlap between sections */
+}
+
+.about-section p, .projects-section p {
+    font-size: 18px;
+}
+
+.projects-section {
+    background-color: aliceblue;
+}
+
+.projects-section img {
+    height: 18.75rem;
+    object-fit:contain;
+}
+
+.projects-section h5 {
+    color: #9805B2;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.projects-section .card {
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+    border: none;
+}
+
+.btn-submit {
+    background-color: #9805B2 !important;
+    border-color: #9805B2 !important;
+}
+
+.btn-submit:hover {
+   background-color: #b923d3 !important;
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+    .hero-left .name {
+        font-size: 50px;
+    }
+
+    .hero-section p {
+        font-size: 24px;
+    }
+
+    .btn.cv-btn {
+        font-size: 1em;
+        width: 50%;
+    }
+
+    .hero-section .hero-right img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust padding for sections */
+    .about-section,
+    .projects-section,
+    .contact-section {
+        padding: 2rem;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 576px) {
+    .hero-section {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: left;
+        /* Center items */
+        text-align: left;
+        /* Center text */
+    }
+
+    .hero-left {
+        margin-bottom: 1rem;
+        /* Add space below hero-left */
+    }
+
+    .hero-left .name {
+        font-size: 40px;
+        margin-bottom: 0.5rem;
+        /* Add space below name */
+    }
+
+    .hero-section p {
+        font-size: 20px;
+        margin-bottom: 1rem;
+        /* Add space below paragraphs */
+    }
+
+    .btn.cv-btn {
+        font-size: 0.9em;
+        width: 80%;
+        /* Increase button width for better touch area */
+        margin-bottom: 1rem;
+        /* Add space below button */
+    }
+
+    .about-section,
+    .projects-section,
+    .contact-section {
+        padding: 1rem;
+        /* Ensure there's enough padding */
+        margin: 0;
+        /* Remove any potential margins that might cause overlap */
+    }
+
+    .projects-section .card {
+        margin-bottom: 1rem;
+        /* Add space between cards */
+    }
+}

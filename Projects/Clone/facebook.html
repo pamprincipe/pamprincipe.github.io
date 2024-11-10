@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="facebook.css">
+    <script src="https://kit.fontawesome.com/e63608f05c.js" crossorigin="anonymous"></script>
+    <title>Facebook - log in or sign up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="left-section-top">
+                <img src="assets/fb-logo.svg" alt="fb-logo">
+                <h1 class="recent">Recent Logins</h1>
+                <p>Click your picture or add an account.</p>
+            </div>
+            <div class="left-section-bottom">
+                <div class="user">
+                    <div class="user-profile-pic">
+                        <img src="profile-pic/profile-pic-1.jpg" alt="user1">
+                    </div>
+                    <div class="user-name">
+                        <p>Pamelah</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-profile-pic">
+                        <i class="fa-solid fa-circle-plus"
+                            style="color: #1877f2; justify-content: center; align-items: center; display: flex; height: 160px; font-size: 42px;"></i>
+                    </div>
+                    <div class="user-name">
+                        <p class="add-account">Add Account</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-profile-pic">
+                        <i class="fa-solid fa-circle-plus"
+                            style="color: #1877f2; justify-content: center; align-items: center; display: flex; height: 160px; font-size: 42px;"></i>
+                    </div>
+                    <div class="user-name">
+                        <p class="add-account">Add Account</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right-section">
+            <div class="right-section-top">
+                <input class="input" type="email" name="input_email" placeholder="Email or phone number">
+                <input class="input" type="password" name="input_password" placeholder="Password">
+                <button class="login-button">Log In</button>
+                <a href=""><p class="forgot-password">Forgot password?</p></a>
+                <hr>
+                <div class="center-button">
+                <button class="new-account-button">Create new account</button>
+                </div>
+            </div>
+            <p class="right-section-bottom"><span>Create a page</span> for a celebrity, brand or business.</p>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>English</li>
+            <li>Filipino</li>
+            <li>Bisaya</li>
+            <li>Espa&ntildeol</li>
+            <li>日本語</li>
+            <li>한국어</li>
+            <li>中文(简体)</li>
+            <li>العربية</li>
+            <li>Português (Brasil)</li>
+            <li>Français (France)</li>
+            <li>Deutsch</li>
+        </ul>
+        <hr>
+    </footer>
+
+    <script>
+        if (screen.width <= 768) {
+            document.location = "facebook-mobile.html";
+        }
+    </script>
+</body>
+</html>

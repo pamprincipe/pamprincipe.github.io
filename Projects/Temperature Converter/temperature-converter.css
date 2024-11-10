@@ -1,0 +1,111 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color */
+}
+
+.header {
+    margin-top: 20px;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #027bceff;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+#moon {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.box {
+    border: 3px solid #027bceff;
+    border-radius: 20px;
+    margin: 50px 500px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+            0 2px 4px rgba(0, 0, 0, 0.05),
+            0 4px 8px rgba(0, 0, 0, 0.05),
+            0 8px 16px rgba(0, 0, 0, 0.05),
+            0 16px 32px rgba(0, 0, 0, 0.05),
+            0 32px 64px rgba(0, 0, 0, 0.05);
+}
+
+.box-inner {
+    color: #027bceff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: transparent;
+}
+
+/* .form-control.custom{
+    background: #191923ff;
+    color: #ffffff;
+} */
+
+.to-label, .from-label, .input-num {
+    margin-bottom: 10px;
+}
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn-convert {
+    margin-top: 20px;
+    border-radius: 40px;
+    background-color: #027bceff;
+    color: aliceblue;
+    border: none;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+}
+
+.btn-convert:hover {
+    background-color: rgb(0, 132, 220);
+}
+
+.btn-convert:active {
+    background-color: rgb(33, 140, 211);
+}
+
+.answer {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+/* example ng application ng rem */
+.html-sample {
+    /* default size ng rem, pwede 'tong palit-palitan */
+    font-size: 16px; 
+}
+
+.h1-sample {
+    /* magiging 32px na ung h1 kasi 16*2 = 32 */
+    font-size: 2rem;
+}

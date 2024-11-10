@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.poppins-semibold{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #ff9500;
+}
+
+.box{
+    margin-top: 16px;
+    width: 440px;
+    height: 580px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1c1c1c;
+    border-radius: 6px;
+    flex-direction: column;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16),
+            0 2px 4px rgba(0, 0, 0, 0.16),
+            0 4px 8px rgba(0, 0, 0, 0.16),
+            0 8px 16px rgba(0, 0, 0, 0.16),
+            0 16px 32px rgba(0, 0, 0, 0.16),
+            0 32px 64px rgba(0, 0, 0, 0.16);
+}
+
+#output {
+    width: 438px;
+    height: 150px;
+    border-radius: 6px 6px 0px 0px;
+    border: 0px;
+    background-color: #1c1c1c;
+    color: white;
+    justify-self: flex-end;
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 6px;
+    box-sizing: border-box;
+    font-size: 50px;
+    z-index: 0;
+}
+
+table{
+    color: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+    /* border-collapse: separate; */
+    /* Allows rounded corners */
+    /* border-spacing: 0; */
+    /* Remove gaps between cells */
+    overflow: hidden;
+    border: 0px sol #1c1c1c;
+}
+
+.row1, .row2, .row3, .row4, .row5{
+    height: 90px;
+    width: 120px;
+    background-color: #505050;
+    border: 4px solid #1c1c1c;
+    text-align: center;
+}
+
+.row1:active,
+.row2:active,
+.row3:active,
+.row4:active,
+.row5:active {
+    background-color: #7d7d7d;
+}
+
+.row1{
+    color: #ff9500;
+}
+
+#backspace{
+    width: 32px;
+    height: 32px;
+}
+
+.btn-orange{
+    height: 90px;
+    width: 120px;
+    background-color: #ff9500;
+    border: 4px solid #1c1c1c;
+    text-align: center;
+}
+
+.btn-orange:active {
+    background-color: #ffb54d;
+}
+
+#btn-dot{
+    border-bottom-left-radius: 10px;
+}
+
+#btn-equals {
+    border-bottom-right-radius: 10px;
+}
+
+.btn-num, .btn-operator, .btn-clear, .btn-dot, .btn-percent, .btn-equals, .btn-del {
+    background-color: transparent;
+    /* Make it match the design */
+    border: none;
+    /* Remove default button border */
+    color: inherit;
+    /* Inherit text color */
+    font-size: 16px;
+    /* Set your desired font size */
+    padding: 10px 15px;
+    /* Adjust padding for better button size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    width: 100%;
+    /* Make button fill the entire <td> */
+    height: 100%;
+    /* Make button fill the entire <td> */
+}
+
+.btn-del img {
+    vertical-align: middle;
+    /* For aligning images inside buttons */
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .poppins-semibold {
+        visibility: visible;
+        height: 10px;
+        font-size: 1.5rem;
+    }
+    .box {
+        margin-top: 30px;
+        width: 75%;
+        height: 75%;
+    }
+    #output {
+        width: 100%;
+        height: 75%;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    
+}
+
+/* Extra large devices (large desktops) */
+/* No media query since the extra-large breakpoint has no upper bound on its width */

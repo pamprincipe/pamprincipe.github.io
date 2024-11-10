@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Monstserrat", sans-serif;
+}
+
+/* html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+body {
+    background-color: #f2f4f7;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .language {
+    margin-top: 0.875rem;
+    font-size: 0.813em;
+    color: #465A69;
+}
+
+.container .fb-logo {
+    width: 3.75rem;
+    margin: 3.75rem 0rem;
+}
+
+.container input {
+    font-size: 1em;
+    width: 100%;
+    /* Use percentage to make it responsive */
+    box-sizing: border-box;
+    /* Ensure padding is included in the width */
+    padding: 1rem;
+    margin-bottom: .625rem;
+    border-radius: .75rem;
+    border: 0.02rem solid rgb(219, 219, 219);
+}
+
+input::placeholder {
+    color: rgb(145, 145, 145);
+}
+
+input:focus {
+    border: 0.02rem solid #000;
+    outline: none;
+}
+
+.container .login-button, .new-account-button {
+    font-size: 1em;
+    border-radius: 3.125rem;
+    width: 100%;
+    /* Same width as inputs */
+    padding: .625rem 1rem;
+    box-sizing: border-box;
+    /* Ensure padding is included in the width */
+}
+
+.container .login-button {
+    background-color: #1877F2;
+    color: #fff;
+    font-weight: 500;
+    border: 0.063rem solid #1877F2;
+}
+
+.login-button:focus {
+    background-color: #378eff;
+}
+
+.container .new-account-button{
+    border: 0.063rem solid #1877F2;
+    color: #1877F2;
+}
+
+.container .meta-logo {
+    width: 3.75rem;
+    margin: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.forgot-password {
+    padding-top: .625rem;
+    padding-bottom: 6.25rem;
+    color: black;
+}
+
+.container .footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.container .footer ul li{
+    font-size: .625em;
+    margin: 0px 3px;
+}
+
+@media (max-width: 2560px) {
+
+    .container input,
+    .container .login-button, .new-account-button {
+        width: 95%;
+        /* Adjust for smaller screens */
+    }
+}
+
